@@ -30,9 +30,9 @@ function onFormSubmit(event) {
 }
 
 function onReloadPage() {
-  let savedDatas = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-  if (savedDatas) {
-    data = savedDatas;
+  let savedData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+  if (savedData) {
+    data = savedData;
     form.email.value = data.email || '';
     form.message.value = data.message || '';
   }
